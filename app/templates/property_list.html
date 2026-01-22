@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="GET">
+    <input name="city" placeholder="City" value="{{ request.args.city }}">
+    <select name="property_type">
+        <option value="">Property Type</option>
+        <option value="Flat">Flat</option>
+        <option value="House">House</option>
+        <option value="Plot">Plot</option>
+    </select>
+
+    <select name="listing_type">
+        <option value="">Rent / Sale</option>
+        <option value="Rent">Rent</option>
+        <option value="Sell">Sell</option>
+    </select>
+
+    <input name="min_price" placeholder="Min Price">
+    <input name="max_price" placeholder="Max Price">
+    <button type="submit">Search</button>
+</form>
+
+<hr>
+
+{% if properties %}
+<div style="display:flex;flex-wrap:wrap;gap:20px;">
+{% for prop in properties %}
+<div style="border:1px solid #ccc;padding:12px;width:260px;">
+
+    <h3>
+        <a href="{{ url_for('property.property_detail', id=prop.id) }}">
+            {{ prop.title }}
+        </a>
+    </h3>
+
+    {% if prop.images %}
+        <img src="{{ url_for('static', filename='uploads/' + prop.images[0].image_path) }}" width="200">
+    {% endif %}
+
+    <p><strong>City:</strong> {{ prop.city }}</p>
+    <p><strong>Size:</strong> {{ prop.area_sqft }} sqft</p>
+    <p><strong>Price:</strong> ₹ {{ prop.price }}</p>
+
+    {% if current_user.is_authenticated and
+          (current_user.role == 'admin' or current_user.id == prop.owner_id) %}
+        <a href="{{ url_for('property.update_property', id=prop.id) }}">Edit</a> |
+        <a href="{{ url_for('property.delete_property', id=prop.id) }}"
+           onclick="return confirm('Delete this property?')">Delete</a>
+    {% endif %}
+</div>
+{% endfor %}
+</div>
+{% else %}
+<p><strong>No matching properties found.</strong></p>
+{% endif %}
+
+{% endblock %}

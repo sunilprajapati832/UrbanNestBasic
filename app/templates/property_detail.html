@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>{{ property.title }}</h2>
+
+<p><strong>City:</strong> {{ property.city }}</p>
+<p><strong>Address:</strong> {{ property.address }}</p>
+<p><strong>Size:</strong> {{ property.area_sqft }} sqft</p>
+<p><strong>Bedrooms:</strong> {{ property.bedrooms }}</p>
+<p><strong>Bathrooms:</strong> {{ property.bathrooms }}</p>
+<p><strong>Price:</strong> ₹ {{ property.price }}</p>
+
+<hr>
+
+<h3>Images</h3>
+{% for img in property.images %}
+<div style="display:inline-block;position:relative;margin:5px;">
+    <img src="{{ url_for('static', filename='uploads/' + img.image_path) }}" width="200">
+
+    {% if current_user.is_authenticated and
+          (current_user.role == 'admin' or current_user.id == property.owner_id) %}
+        <a href="{{ url_for('property.delete_property_image', image_id=img.id) }}"
+           style="position:absolute;top:5px;right:8px;color:red;text-decoration:none;">
+           ✖
+        </a>
+    {% endif %}
+</div>
+{% endfor %}
+
+<hr>
+
+<h3>Owner</h3>
+<p><strong>Name:</strong> {{ property.owner.name }}</p>
+<p><strong>Phone:</strong> {{ property.owner.phone }}</p>
+
+{% if current_user.is_authenticated and current_user.role == 'admin' %}
+<p><strong>Email:</strong> {{ property.owner.email }}</p>
+{% endif %}
+
+{% endblock %}

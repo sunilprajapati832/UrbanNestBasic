@@ -1,0 +1,674 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add New Property</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <label>Title:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Description:</label><br>
+    <textarea name="description" required></textarea><br><br>
+
+    <label>Price:</label><br>
+    <input type="number" name="price" required><br><br>
+
+    <label>Property Type:</label><br>
+    <select name="property_type">
+        <option>Flat</option>
+        <option>House</option>
+        <option>Plot</option>
+    </select><br><br>
+
+    <label>Listing Type:</label><br>
+    <select name="listing_type">
+        <option>Sell</option>
+        <option>Rent</option>
+    </select><br><br>
+
+    <label>State:</label>
+<input list="states" name="state">
+
+<datalist id="states">
+    <option value="Andhra Pradesh">
+    <option value="Arunachal Pradesh">
+    <option value="Assam">
+    <option value="Bihar">
+    <option value="Chhattisgarh">
+    <option value="Goa">
+    <option value="Gujarat">
+    <option value="Haryana">
+    <option value="Himachal Pradesh">
+    <option value="Jharkhand">
+    <option value="Karnataka">
+    <option value="Kerala">
+    <option value="Madhya Pradesh">
+    <option value="Maharashtra">
+    <option value="Manipur">
+    <option value="Meghalaya">
+    <option value="Mizoram">
+    <option value="Nagaland">
+    <option value="Odisha">
+    <option value="Punjab">
+    <option value="Rajasthan">
+    <option value="Sikkim">
+    <option value="Tamil Nadu">
+    <option value="Telangana">
+    <option value="Tripura">
+    <option value="Uttar Pradesh">
+    <option value="Uttarakhand">
+    <option value="West Bengal">
+
+    <option value="Andaman and Nicobar Islands">
+    <option value="Chandigarh">
+    <option value="Dadra and Nagar Haveli and Daman and Diu">
+    <option value="Delhi">
+    <option value="Jammu and Kashmir">
+    <option value="Ladakh">
+    <option value="Lakshadweep">
+    <option value="Puducherry">
+
+</datalist>
+
+<label>City:</label>
+<input list="cities" name="city">
+
+<datalist id="cities">
+        <!-- Andhra Pradesh -->
+    <option value="Visakhapatnam">
+    <option value="Vijayawada">
+    <option value="Guntur">
+    <option value="Tirupati">
+    <option value="Kurnool">
+    <option value="Rajahmundry">
+    <option value="Kakinada">
+    <option value="Nellore">
+    <option value="Anantapur">
+    <option value="Kadapa">
+    <option value="Ongole">
+    <option value="Machilipatnam">
+    <option value="Srikakulam">
+    <option value="Eluru">
+    <option value="Vizianagaram">
+    <!-- Arunachal Pradesh -->
+    <option value="Itanagar">
+    <option value="Naharlagun">
+    <option value="Tawang">
+    <option value="Ziro">
+    <option value="Pasighat">
+    <option value="Roing">
+    <option value="Bomdila">
+    <option value="Along">
+    <option value="Tezu">
+    <option value="Changlang">
+    <option value="Khonsa">
+    <option value="Namsai">
+    <option value="Seppa">
+    <option value="Daporijo">
+    <option value="Yingkiong">
+    <!-- Assam -->
+    <option value="Guwahati">
+    <option value="Dibrugarh">
+    <option value="Silchar">
+    <option value="Jorhat">
+    <option value="Tezpur">
+    <option value="Nagaon">
+    <option value="Sivasagar">
+    <option value="Tinsukia">
+    <option value="Diphu">
+    <option value="Goalpara">
+    <option value="Barpeta">
+    <option value="Bongaigaon">
+    <option value="Haflong">
+    <option value="North Lakhimpur">
+    <option value="Karimganj">
+    <!-- Bihar -->
+    <option value="Patna">
+    <option value="Gaya">
+    <option value="Bhagalpur">
+    <option value="Muzaffarpur">
+    <option value="Darbhanga">
+    <option value="Arrah">
+    <option value="Begusarai">
+    <option value="Katihar">
+    <option value="Munger">
+    <option value="Purnia">
+    <option value="Saharsa">
+    <option value="Samastipur">
+    <option value="Chhapra">
+    <option value="Bettiah">
+    <option value="Motihari">
+    <!-- Chhattisgarh -->
+    <option value="Raipur">
+    <option value="Bhilai">
+    <option value="Bilaspur">
+    <option value="Korba">
+    <option value="Durg">
+    <option value="Rajnandgaon">
+    <option value="Jagdalpur">
+    <option value="Ambikapur">
+    <option value="Raigarh">
+    <option value="Dhamtari">
+    <option value="Kanker">
+    <option value="Janjgir">
+    <option value="Mahasamund">
+    <option value="Kawardha">
+    <option value="Surajpur">
+    <!-- Goa -->
+    <option value="Panaji">
+    <option value="Margao">
+    <option value="Vasco da Gama">
+    <option value="Mapusa">
+    <option value="Ponda">
+    <option value="Bicholim">
+    <option value="Curchorem">
+    <option value="Sanquelim">
+    <option value="Valpoi">
+    <option value="Canacona">
+    <option value="Quepem">
+    <option value="Sanguem">
+    <option value="Pernem">
+    <option value="Dabolim">
+    <option value="Chicalim">
+    <!-- Gujarat -->
+    <option value="Ahmedabad">
+    <option value="Surat">
+    <option value="Vadodara">
+    <option value="Rajkot">
+    <option value="Bhavnagar">
+    <option value="Jamnagar">
+    <option value="Gandhinagar">
+    <option value="Junagadh">
+    <option value="Anand">
+    <option value="Nadiad">
+    <option value="Navsari">
+    <option value="Bharuch">
+    <option value="Mehsana">
+    <option value="Morbi">
+    <option value="Porbandar">
+    <!-- Haryana -->
+    <option value="Gurugram">
+    <option value="Faridabad">
+    <option value="Panipat">
+    <option value="Ambala">
+    <option value="Yamunanagar">
+    <option value="Rohtak">
+    <option value="Hisar">
+    <option value="Karnal">
+    <option value="Sonipat">
+    <option value="Panchkula">
+    <option value="Bhiwani">
+    <option value="Sirsa">
+    <option value="Rewari">
+    <option value="Jhajjar">
+    <option value="Kaithal">
+    <!-- Himachal Pradesh -->
+    <option value="Shimla">
+    <option value="Manali">
+    <option value="Dharamshala">
+    <option value="Solan">
+    <option value="Mandi">
+    <option value="Bilaspur">
+    <option value="Hamirpur">
+    <option value="Kullu">
+    <option value="Chamba">
+    <option value="Una">
+    <option value="Nahan">
+    <option value="Palampur">
+    <option value="Kangra">
+    <option value="Sundernagar">
+    <option value="Paonta Sahib">
+    <!-- Jharkhand -->
+    <option value="Ranchi">
+    <option value="Jamshedpur">
+    <option value="Dhanbad">
+    <option value="Bokaro">
+    <option value="Deoghar">
+    <option value="Hazaribagh">
+    <option value="Giridih">
+    <option value="Ramgarh">
+    <option value="Chaibasa">
+    <option value="Dumka">
+    <option value="Phusro">
+    <option value="Medininagar">
+    <option value="Chirkunda">
+    <option value="Sahibganj">
+    <option value="Jhumri Telaiya">
+    <!-- Karnataka -->
+    <option value="Bengaluru">
+    <option value="Mysuru">
+    <option value="Mangalore">
+    <option value="Hubli">
+    <option value="Belgaum">
+    <option value="Davanagere">
+    <option value="Ballari">
+    <option value="Tumakuru">
+    <option value="Shivamogga">
+    <option value="Bidar">
+    <option value="Raichur">
+    <option value="Hassan">
+    <option value="Bagalkot">
+    <option value="Chitradurga">
+    <option value="Udupi">
+    <!-- Kerala -->
+    <option value="Thiruvananthapuram">
+    <option value="Kochi">
+    <option value="Kozhikode">
+    <option value="Kollam">
+    <option value="Thrissur">
+    <option value="Alappuzha">
+    <option value="Palakkad">
+    <option value="Kannur">
+    <option value="Kottayam">
+    <option value="Malappuram">
+    <option value="Pathanamthitta">
+    <option value="Idukki">
+    <option value="Wayanad">
+    <option value="Kasargod">
+    <option value="Varkala">
+    <!-- Madhya Pradesh -->
+    <option value="Bhopal">
+    <option value="Indore">
+    <option value="Jabalpur">
+    <option value="Gwalior">
+    <option value="Ujjain">
+    <option value="Sagar">
+    <option value="Ratlam">
+    <option value="Rewa">
+    <option value="Satna">
+    <option value="Dewas">
+    <option value="Chhindwara">
+    <option value="Vidisha">
+    <option value="Shivpuri">
+    <option value="Katni">
+    <option value="Khandwa">
+    <!-- Maharashtra -->
+    <option value="Mumbai">
+    <option value="Pune">
+    <option value="Nagpur">
+    <option value="Nashik">
+    <option value="Thane">
+    <option value="Aurangabad">
+    <option value="Solapur">
+    <option value="Amravati">
+    <option value="Kolhapur">
+    <option value="Nanded">
+    <option value="Sangli">
+    <option value="Jalgaon">
+    <option value="Akola">
+    <option value="Latur">
+    <option value="Ahmednagar">
+    <!-- Manipur -->
+    <option value="Imphal">
+    <option value="Thoubal">
+    <option value="Bishnupur">
+    <option value="Churachandpur">
+    <option value="Ukhrul">
+    <option value="Senapati">
+    <option value="Tamenglong">
+    <option value="Kakching">
+    <option value="Jiribam">
+    <option value="Moreh">
+    <option value="Kangpokpi">
+    <option value="Noney">
+    <option value="Pherzawl">
+    <option value="Kamjong">
+    <option value="Tengnoupal">
+    <!-- Meghalaya -->
+    <option value="Shillong">
+    <option value="Tura">
+    <option value="Nongpoh">
+    <option value="Jowai">
+    <option value="Baghmara">
+    <option value="Williamnagar">
+    <option value="Resubelpara">
+    <option value="Mairang">
+    <option value="Nongstoin">
+    <option value="Mawkyrwat">
+    <option value="Khliehriat">
+    <option value="Ampati">
+    <option value="Sohra">
+    <option value="Dawki">
+    <option value="Ranikor">
+    <!-- Mizoram -->
+    <option value="Aizawl">
+    <option value="Lunglei">
+    <option value="Champhai">
+    <option value="Serchhip">
+    <option value="Kolasib">
+    <option value="Saiha">
+    <option value="Lawngtlai">
+    <option value="Mamit">
+    <option value="Saitual">
+    <option value="Hnahthial">
+    <option value="Khawzawl">
+    <option value="North Vanlaiphai">
+    <option value="Zawlnuam">
+    <option value="Tlabung">
+    <option value="Biate">
+    <!-- Nagaland -->
+    <option value="Dimapur">
+    <option value="Kohima">
+    <option value="Mokokchung">
+    <option value="Tuensang">
+    <option value="Wokha">
+    <option value="Zunheboto">
+    <option value="Mon">
+    <option value="Phek">
+    <option value="Kiphire">
+    <option value="Longleng">
+    <option value="Peren">
+    <option value="Chumukedima">
+    <option value="Tseminyu">
+    <option value="Meluri">
+    <option value="Noklak">
+    <!-- Odisha -->
+    <option value="Bhubaneswar">
+    <option value="Cuttack">
+    <option value="Rourkela">
+    <option value="Berhampur">
+    <option value="Sambalpur">
+    <option value="Puri">
+    <option value="Balasore">
+    <option value="Baripada">
+    <option value="Jharsuguda">
+    <option value="Angul">
+    <option value="Bargarh">
+    <option value="Kendrapara">
+    <option value="Rayagada">
+    <option value="Koraput">
+    <option value="Jeypore">
+    <!-- Punjab -->
+    <option value="Amritsar">
+    <option value="Ludhiana">
+    <option value="Jalandhar">
+    <option value="Patiala">
+    <option value="Bathinda">
+    <option value="Mohali">
+    <option value="Hoshiarpur">
+    <option value="Moga">
+    <option value="Pathankot">
+    <option value="Abohar">
+    <option value="Firozpur">
+    <option value="Barnala">
+    <option value="Sangrur">
+    <option value="Kapurthala">
+    <option value="Faridkot">
+    <!-- Rajasthan -->
+    <option value="Jaipur">
+    <option value="Jodhpur">
+    <option value="Udaipur">
+    <option value="Kota">
+    <option value="Ajmer">
+    <option value="Bikaner">
+    <option value="Alwar">
+    <option value="Bhilwara">
+    <option value="Sikar">
+    <option value="Pali">
+    <option value="Tonk">
+    <option value="Chittorgarh">
+    <option value="Bharatpur">
+    <option value="Barmer">
+    <option value="Nagaur">
+    <!-- Sikkim -->
+    <option value="Gangtok">
+    <option value="Namchi">
+    <option value="Gyalshing">
+    <option value="Mangan">
+    <option value="Rangpo">
+    <option value="Jorethang">
+    <option value="Singtam">
+    <option value="Pakyong">
+    <option value="Ravangla">
+    <option value="Soreng">
+    <option value="Chungthang">
+    <option value="Yuksom">
+    <option value="Zuluk">
+    <option value="Lachen">
+    <option value="Lachung">
+    <!-- Tamil Nadu -->
+    <option value="Chennai">
+    <option value="Coimbatore">
+    <option value="Madurai">
+    <option value="Tiruchirappalli">
+    <option value="Salem">
+    <option value="Tirunelveli">
+    <option value="Erode">
+    <option value="Vellore">
+    <option value="Thoothukudi">
+    <option value="Nagercoil">
+    <option value="Thanjavur">
+    <option value="Dindigul">
+    <option value="Cuddalore">
+    <option value="Karur">
+    <option value="Kanchipuram">
+    <!-- Telangana -->
+    <option value="Hyderabad">
+    <option value="Warangal">
+    <option value="Nizamabad">
+    <option value="Karimnagar">
+    <option value="Khammam">
+    <option value="Ramagundam">
+    <option value="Mahbubnagar">
+    <option value="Nalgonda">
+    <option value="Adilabad">
+    <option value="Siddipet">
+    <option value="Miryalaguda">
+    <option value="Mancherial">
+    <option value="Jagtial">
+    <option value="Suryapet">
+    <option value="Zaheerabad">
+    <!-- Tripura -->
+    <option value="Agartala">
+    <option value="Udaipur">
+    <option value="Dharmanagar">
+    <option value="Kailasahar">
+    <option value="Belonia">
+    <option value="Ambassa">
+    <option value="Khowai">
+    <option value="Sonamura">
+    <option value="Teliamura">
+    <option value="Bishalgarh">
+    <option value="Kamalpur">
+    <option value="Sabroom">
+    <option value="Ranirbazar">
+    <option value="Melaghar">
+    <option value="Panisagar">
+    <!-- Uttar Pradesh -->
+    <option value="Lucknow">
+    <option value="Kanpur">
+    <option value="Varanasi">
+    <option value="Agra">
+    <option value="Meerut">
+    <option value="Allahabad">
+    <option value="Ghaziabad">
+    <option value="Noida">
+    <option value="Bareilly">
+    <option value="Aligarh">
+    <option value="Moradabad">
+    <option value="Saharanpur">
+    <option value="Gorakhpur">
+    <option value="Jhansi">
+    <option value="Faizabad">
+    <!-- Uttarakhand -->
+    <option value="Dehradun">
+    <option value="Haridwar">
+    <option value="Rishikesh">
+    <option value="Nainital">
+    <option value="Haldwani">
+    <option value="Roorkee">
+    <option value="Kashipur">
+    <option value="Rudrapur">
+    <option value="Pithoragarh">
+    <option value="Almora">
+    <option value="Tehri">
+    <option value="Mussoorie">
+    <option value="Bageshwar">
+    <option value="Chamoli">
+    <option value="Uttarkashi">
+    <!-- West Bengal -->
+    <option value="Kolkata">
+    <option value="Howrah">
+    <option value="Durgapur">
+    <option value="Asansol">
+    <option value="Siliguri">
+    <option value="Malda">
+    <option value="Kharagpur">
+    <option value="Haldia">
+    <option value="Bardhaman">
+    <option value="Berhampore">
+    <option value="Jalpaiguri">
+    <option value="Balurghat">
+    <option value="Raiganj">
+    <option value="Bankura">
+    <option value="Cooch Behar">
+    <!-- Andaman and Nicobar Islands -->
+    <option value="Port Blair">
+    <option value="Diglipur">
+    <option value="Mayabunder">
+    <option value="Rangat">
+    <option value="Hut Bay">
+    <option value="Neil Island">
+    <option value="Havelock Island">
+    <option value="Bombooflat">
+    <option value="Garacharma">
+    <option value="Prothrapur">
+    <option value="Wandoor">
+    <option value="Ferrargunj">
+    <option value="Kadamtala">
+    <option value="Campbell Bay">
+    <option value="Car Nicobar">
+    <!-- Chandigarh -->
+    <option value="Chandigarh">
+    <option value="Manimajra">
+    <option value="Sector 17">
+    <option value="Sector 22">
+    <option value="Sector 43">
+    <option value="Sector 26">
+    <option value="Sector 15">
+    <option value="Sector 35">
+    <option value="Sector 8">
+    <option value="Sector 10">
+    <option value="Sector 11">
+    <option value="Sector 20">
+    <option value="Sector 21">
+    <option value="Sector 44">
+    <option value="Sector 45">
+    <!-- Dadra and Nagar Haveli and Daman and Diu -->
+    <option value="Silvassa">
+    <option value="Daman">
+    <option value="Diu">
+    <option value="Amli">
+    <option value="Kachigam">
+    <option value="Marwad">
+    <option value="Varkund">
+    <option value="Bhimpore">
+    <option value="Sayli">
+    <option value="Naroli">
+    <option value="Karambele">
+    <option value="Dunetha">
+    <option value="Zari">
+    <option value="Rakholi">
+    <option value="Ambawadi">
+    <!-- Delhi -->
+    <option value="New Delhi">
+    <option value="Dwarka">
+    <option value="Saket">
+    <option value="Karol Bagh">
+    <option value="Connaught Place">
+    <option value="Lajpat Nagar">
+    <option value="Rohini">
+    <option value="Pitampura">
+    <option value="Janakpuri">
+    <option value="Shahdara">
+    <option value="Okhla">
+    <option value="Greater Kailash">
+    <option value="Vasant Kunj">
+    <option value="Rajouri Garden">
+    <option value="Chandni Chowk">
+    <!-- Jammu and Kashmir -->
+    <option value="Srinagar">
+    <option value="Jammu">
+    <option value="Anantnag">
+    <option value="Baramulla">
+    <option value="Kupwara">
+    <option value="Pulwama">
+    <option value="Kathua">
+    <option value="Udhampur">
+    <option value="Poonch">
+    <option value="Rajouri">
+    <option value="Kulgam">
+    <option value="Budgam">
+    <option value="Handwara">
+    <option value="Sopore">
+    <option value="Ganderbal">
+    <!-- Ladakh -->
+    <option value="Leh">
+    <option value="Kargil">
+    <option value="Diskit">
+    <option value="Nubra">
+    <option value="Padum">
+    <option value="Dras">
+    <option value="Tangtse">
+    <option value="Nyoma">
+    <option value="Chuchot">
+    <option value="Saspul">
+    <option value="Khaltsi">
+    <option value="Turtuk">
+    <option value="Zanskar">
+    <option value="Basgo">
+    <option value="Upshi">
+    <!-- Lakshadweep -->
+    <option value="Kavaratti">
+    <option value="Agatti">
+    <option value="Amini">
+    <option value="Andrott">
+    <option value="Kalpeni">
+    <option value="Kadmat">
+    <option value="Minicoy">
+    <option value="Kiltan">
+    <option value="Chetlat">
+    <option value="Bitra">
+    <option value="Bangaram">
+    <option value="Kochi (Lakshadweep Office)">
+    <option value="Kavaratti Jetty">
+    <option value="Agatti Airport">
+    <option value="Kalpeni Island">
+    <!-- Puducherry -->
+    <option value="Puducherry">
+    <option value="Karaikal">
+    <option value="Mahe">
+    <option value="Yanam">
+    <option value="Ozhukarai">
+    <option value="Ariyankuppam">
+    <option value="Villianur">
+    <option value="Bahour">
+    <option value="Thirubuvanai">
+    <option value="Kurumbapet">
+    <option value="Lawspet">
+    <option value="Reddiarpalayam">
+    <option value="Kottakuppam">
+    <option value="Kalapet">
+    <option value="Saram">
+</datalist>
+
+    <br>
+    <label>Address:</label><br>
+    <input type="text" name="address"><br><br>
+
+    <label>Area (sqft):</label><br>
+    <input type="number" name="area_sqft"><br><br>
+
+    <label>Bedrooms:</label><br>
+    <input type="number" name="bedrooms"><br><br>
+
+    <label>Bathrooms:</label><br>
+    <input type="number" name="bathrooms"><br><br>
+
+    <hr>
+
+    <label>Upload Property Images (Max 25):</label><br>
+    <input type="file" name="images" multiple accept="image/*"><br><br> <!-- ✅ multiple files -->
+
+    <button type="submit">Add Property</button>
+</form>
+{% endblock %}

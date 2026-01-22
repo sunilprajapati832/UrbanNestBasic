@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>{{ property.title }}</h2>
+<p>{{ property.description }}</p>
+
+<p>
+    {{ property.property_type }} |
+    {{ property.listing_type }} |
+    {{ property.bedrooms }} BHK |
+    {{ property.area_sqft }} sqft
+</p>
+
+<p><strong>City:</strong> {{ property.city }}</p>
+<p><strong>Price:</strong> ₹{{ "{:,}".format(property.price) }}</p>
+
+<hr>
+
+<h3>Images</h3>
+{% for img in property.images %}
+    {% if img.image_path.startswith('http') %}
+        <img src="{{ img.image_path }}" width="250">
+    {% else %}
+        <img src="{{ url_for('static', filename=img.image_path) }}" width="250">
+    {% endif %}
+{% endfor %}
+
+<hr>
+
+<h3>Owner Details</h3>
+<p><strong>Name:</strong> {{ property.owner.name }}</p>
+<p><strong>Phone:</strong> {{ property.owner.phone }}</p>
+<p><strong>Email:</strong> {{ property.owner.email }}</p>
+
+{% if current_user.is_authenticated and current_user.id == property.owner_id %}
+    <br>
+    <a href="{{ url_for('property.property_list') }}">Back to list</a>
+{% endif %}
+
+{% endblock %}

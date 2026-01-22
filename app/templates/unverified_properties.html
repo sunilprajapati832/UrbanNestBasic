@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Pending Property Verifications</h2>
+
+{% if properties %}
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <th>Title</th>
+        <th>Owner</th>
+        <th>City</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </tr>
+    {% for prop in properties %}
+    <tr>
+        <td>{{ prop.title }}</td>
+        <td>{{ prop.owner.name }} ({{ prop.owner.email }})</td>
+        <td>{{ prop.city }}</td>
+        <td>₹ {{ prop.price }}</td>
+        <td>
+            <a href="{{ url_for('property.verify_property', id=prop.id) }}"
+               onclick="return confirm('Approve this property?')">Approve</a> |
+            <a href="{{ url_for('property.delete_property', id=prop.id) }}"
+               onclick="return confirm('Reject/Delete this property?')">Reject</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No properties pending verification.</p>
+{% endif %}
+
+{% endblock %}

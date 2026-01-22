@@ -1,4 +1,4 @@
-🏙️ UrbanNestBasic — Real Estate Web Application (Flask)
+# 🏙️ UrbanNestBasic — Real Estate Web Application (Flask)
 
 UrbanNestBasic is a functionality-focused real estate web application built using Flask.
 This repository represents the initial and foundational stage of the UrbanNest project, concentrating on backend development, data modeling, authentication, and real-world CRUD workflows.
@@ -6,7 +6,7 @@ This repository represents the initial and foundational stage of the UrbanNest p
 ⚠️ UI/UX in this project is intentionally basic.
 The goal is to demonstrate Flask backend fundamentals, not frontend polish.
 
-1️⃣ Project Objective
+## 1️⃣ Project Objective
 
 The primary objective of this project is to build a working real estate backend system that helps in understanding:
 
@@ -28,7 +28,7 @@ Admin moderation concepts
 
 This project serves as a learning-first and backend-reference project.
 
-2️⃣ Core Functional Features
+## 2️⃣ Core Functional Features
 
 User Registration & Login (Flask-Login)
 
@@ -58,7 +58,7 @@ Price Range
 
 SQLite database with SQLAlchemy ORM
 
-3️⃣ Technology Stack
+## 3️⃣ Technology Stack
 
 Backend: Python, Flask
 
@@ -78,11 +78,11 @@ File Uploads: Werkzeug
 
 Deployment (Advanced Version): Render
 
-4️⃣ Project Evolution (Important)
+## 4️⃣ Project Evolution (Important)
 
 This repository (UrbanNestBasic) is the initial stage of a larger project.
 
-✅ Purpose of This Repository
+## ✅ Purpose of This Repository
 
 Learn Flask backend from scratch
 
@@ -90,19 +90,19 @@ Understand data flow and routing
 
 Practice real-world CRUD logic
 
-🚀 Advanced Version (Modern UI + Live Deployment)
+## 🚀 Advanced Version (Modern UI + Live Deployment)
 
 I later evolved this project into a fully redesigned, modern UI/UX real estate platform, deployed live using Render.
 
-👉 Advanced GitHub Repository (Modern Version):
+### 👉 Advanced GitHub Repository (Modern Version):
 🔗 https://github.com/sunilprajapati832/UrbanNest_Flask
 
-👉 Live Website (Render Deployment):
+### 👉 Live Website (Render Deployment):
 🌐 https://urbannest-m1ix.onrender.com/
 
 If you are interested in modern UI, better UX, production-ready structure, and live deployment, please refer to the advanced repository above.
 
-5️⃣ Project Folder Structure (Professional & Actual)
+## 5️⃣ Project Folder Structure (Professional & Actual)
 
 ```text
 UrbanNestBasic/
@@ -154,7 +154,7 @@ UrbanNestBasic/
 └── README.md                # Documentation
 ```
 
-✅ Who Should Use This Project?
+## ✅ Who Should Use This Project?
 
 Flask beginners learning backend fundamentals
 
@@ -166,15 +166,15 @@ Backend-focused portfolio projects
 
 Reference for building scalable Flask apps
 
-📌 Final Note
+## 📌 Final Note
 
 This repository is not abandoned — it is the foundation of the advanced UrbanNest project.
 
 For:
 
-✅ Clean backend logic → Use this repo
+## ✅ Clean backend logic → Use this repo
 
-🚀 Modern UI & live product → Visit the advanced repo
+## 🚀 Modern UI & live product → Visit the advanced repo
 
 Use as a reference for backend structure
 

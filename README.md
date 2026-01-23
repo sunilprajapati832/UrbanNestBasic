@@ -174,6 +174,16 @@ For:
 
 ## ✅ Clean backend logic → Use this repo
 
+## 👨‍💻 Author
+
+**Sunil Prajapati**<br>
+M.E. Graduate | Python & Flask Developer <br>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20Me-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/sunil-prajapati832)
+
+---
+
+⭐ If you find this project valuable, feel free to star the repository and connect!
+
 ## 🚀 Modern UI & live product → Visit the advanced repo
 
 Use as a reference for backend structure

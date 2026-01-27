@@ -6,6 +6,8 @@ This repository represents the initial and foundational stage of the UrbanNest p
 ⚠️ UI/UX in this project is intentionally basic.
 The goal is to demonstrate Flask backend fundamentals, not frontend polish.
 
+![Website Preview](app/static/images/UrbanNestScratch1.png)
+
 ## 1️⃣ Project Objective
 
 The primary objective of this project is to build a working real estate backend system that helps in understanding:

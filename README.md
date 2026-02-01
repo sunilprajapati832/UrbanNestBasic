@@ -14,7 +14,7 @@ The goal is to demonstrate Flask backend fundamentals, not frontend polish.
 ![Website Preview](app/static/images/UrbanNestScratch4.png)
 ![Website Preview](app/static/images/UrbanNestScratch5.png)
 ![Website Preview](app/static/images/UrbanNestScratch6.png)
-![Website Preview](app/static/images/UrbanNestScratch7.png)
+
 
 ## 1️⃣ Project Objective
 

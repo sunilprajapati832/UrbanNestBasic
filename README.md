@@ -15,30 +15,11 @@ The goal is to demonstrate Flask backend fundamentals, not frontend polish.
 ![Website Preview](app/static/images/UrbanNestScratch5.png)
 ![Website Preview](app/static/images/UrbanNestScratch6.png)
 
-
-| **Flask application structure** |**SQLAlchemy ORM and relationships**   |**Authentication & authorization**  | **Role-based access control**  | **Property CRUD workflows** | **Image uploads and file handling** |   **Filtering and search logic**   | **Admin moderation concepts**       |
-|------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|
-
 ## 1️⃣ Project Objective
 
 The primary objective of this project is to build a working real estate backend system that helps in understanding:
-
-Flask application structure
-
-SQLAlchemy ORM and relationships
-
-Authentication & authorization
-
-Role-based access control
-
-Property CRUD workflows
-
-Image uploads and file handling
-
-Filtering and search logic
-
-Admin moderation concepts
-
+| **Flask application structure** |**SQLAlchemy ORM and relationships**   |**Authentication & authorization**  | **Role-based access control**  | **Property CRUD workflows** | **Image uploads and file handling** |   **Filtering and search logic**   | **Admin moderation concepts**       |
+|------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|
 This project serves as a learning-first and backend-reference project.
 
 ## 2️⃣ Core Functional Features

@@ -26,6 +26,9 @@ This project serves as a learning-first and backend-reference project.
 
 ## 2️⃣ Core Functional Features
 
+| **User Registration & Login (Flask-Login)** |**User Profile Management**   |**Authentication & authorization**  | **Role-based access control**  | **Property CRUD workflows** | **Image uploads and file handling** |   **Filtering and search logic**   | **Admin moderation concepts**       |
+|------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|
+
 User Registration & Login (Flask-Login)
 
 User Profile Management

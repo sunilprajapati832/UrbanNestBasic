@@ -26,8 +26,8 @@ This project serves as a learning-first and backend-reference project.
 
 ## 2️⃣ Core Functional Features
 
-| **User Registration & Login (Flask-Login)** |**User Profile Management**   |**Authentication & authorization**  | **Role-based access control**  | **Property CRUD workflows** | **Image uploads and file handling** |   **Filtering and search logic**   | **Admin moderation concepts**       |
-|------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|
+| **User Registration & Login (Flask-Login)** |**User Profile Management**   |**Role-Based Access (user / admin)**  | **Property Listing (Rent / Sale)**  | **Add / Edit / Delete Property (Owner & Admin)** | **Multiple Property Image Upload** |   **Property Detail Page**   | **Admin Property Verification Flow**       | **Search & Filter: City, Property Type, Rent / Sale, Price Range** | **SQLite database with SQLAlchemy ORM**  |
+|------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|------|
 
 User Registration & Login (Flask-Login)
 

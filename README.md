@@ -29,33 +29,6 @@ This project serves as a learning-first and backend-reference project.
 | **User Registration & Login (Flask-Login)** |**User Profile Management**   |**Role-Based Access (user / admin)**  | **Property Listing (Rent / Sale)**  | **Add / Edit / Delete Property (Owner & Admin)** | **Multiple Property Image Upload** |   **Property Detail Page**   | **Admin Property Verification Flow**       | **Search & Filter: City, Property Type, Rent / Sale, Price Range** | **SQLite database with SQLAlchemy ORM**  |
 |------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|------|
 
-User Registration & Login (Flask-Login)
-
-User Profile Management
-
-Role-Based Access (user / admin)
-
-Property Listing (Rent / Sale)
-
-Add / Edit / Delete Property (Owner & Admin)
-
-Multiple Property Image Upload
-
-Property Detail Page
-
-Admin Property Verification Flow
-
-Search & Filter:
-
-City
-
-Property Type
-
-Rent / Sale
-
-Price Range
-
-SQLite database with SQLAlchemy ORM
 
 ## 3️⃣ Technology Stack
 

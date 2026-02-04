@@ -32,6 +32,9 @@ This project serves as a learning-first and backend-reference project.
 
 ## 3️⃣ Technology Stack
 
+| **Flask application structure** |**SQLAlchemy ORM and relationships**   |**Authentication & authorization**  | **Role-based access control**  | **Property CRUD workflows** | **Image uploads and file handling** |   **Filtering and search logic**   | **Admin moderation concepts**       |
+|------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|
+
 Backend: Python, Flask
 
 Frontend: HTML, Jinja2 (Basic UI)

@@ -32,8 +32,9 @@ This project serves as a learning-first and backend-reference project.
 
 ## 3️⃣ Technology Stack
 
-| **Backend: Python, Flask** |**Frontend: HTML, Jinja2 (Basic UI)**   |**Database: SQLite**  | **ORM: SQLAlchemy**  | **Authentication: Flask-Login** | **Forms & Validation: Flask-WTF** |   **Static Assets: CSS, JavaScript**   | **File Uploads: Werkzeug**       | **Deployment (Advanced Version): Render** |
+| **Backend: ** |**Frontend: **   |**Database:**  | **ORM:**  | **Authentication: ** | **Forms & Validation: ** |   **Static Assets:**   | **File Uploads:**       | **Deployment (Advanced Version): ** |
 |------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|
+|Python, Flask| HTML, Jinja2 (Basic UI) |  SQLite | SQLAlchemy| Flask-Login| Flask-WTF |  CSS, JavaScript |  Werkzeug |Render |
 
 ## 4️⃣ Project Evolution (Important)
 

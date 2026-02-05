@@ -42,11 +42,8 @@ This repository (UrbanNestBasic) is the initial stage of a larger project.
 
 ## ✅ Purpose of This Repository
 
-Learn Flask backend from scratch
-
-Understand data flow and routing
-
-Practice real-world CRUD logic
+|**Learn Flask backend from scratch**|**Understand data flow and routing**|**Practice real-world CRUD logic**|
+|------------------------------------|------------------------------------|----------------------------------|
 
 ## 🚀 Advanced Version (Modern UI + Live Deployment)
 

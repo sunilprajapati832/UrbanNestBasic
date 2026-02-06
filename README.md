@@ -24,7 +24,7 @@ The primary objective of this project is to build a working real estate backend 
 
 This project serves as a learning-first and backend-reference project.
 
-## 2️⃣ Core Functional Features
+## Core Functional Features
 
 | **User Registration & Login (Flask-Login)** |**User Profile Management**   |**Role-Based Access (user / admin)**  | **Property Listing (Rent / Sale)**  | **Add / Edit / Delete Property (Owner & Admin)** | **Multiple Property Image Upload** |   **Property Detail Page**   | **Admin Property Verification Flow**       | **Search & Filter: City, Property Type, Rent / Sale, Price Range** | **SQLite database with SQLAlchemy ORM**  |
 |------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|------|

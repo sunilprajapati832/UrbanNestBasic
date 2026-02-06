@@ -36,7 +36,7 @@ This project serves as a learning-first and backend-reference project.
 |------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|
 |Python, Flask| HTML, Jinja2 (Basic UI) |  SQLite | SQLAlchemy| Flask-Login| Flask-WTF |  CSS, JavaScript |  Werkzeug |Render |
 
-## 4️⃣ Project Evolution (Important)
+## Project Evolution (Important)
 
 This repository (UrbanNestBasic) is the initial stage of a larger project.
 

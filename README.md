@@ -30,7 +30,7 @@ This project serves as a learning-first and backend-reference project.
 |------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|------|
 
 
-## 3️⃣ Technology Stack
+## Technology Stack
 
 | **Backend: ** |**Frontend: **   |**Database:**  | **ORM:**  | **Authentication: ** | **Forms & Validation: ** |   **Static Assets:**   | **File Uploads:**       | **Deployment (Advanced Version): ** |
 |------------- | ---------------------- | ----------------|------------------|-----------|-----------------|-----------|------------|---------|

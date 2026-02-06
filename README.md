@@ -15,7 +15,7 @@ The goal is to demonstrate Flask backend fundamentals, not frontend polish.
 ![Website Preview](app/static/images/UrbanNestScratch5.png)
 ![Website Preview](app/static/images/UrbanNestScratch6.png)
 
-## 1️⃣ Project Objective
+## Project Objective
 
 The primary objective of this project is to build a working real estate backend system that helps in understanding:
 

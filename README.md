@@ -7,7 +7,6 @@ This repository represents the initial and foundational stage of the UrbanNest p
 The goal is to demonstrate Flask backend fundamentals, not frontend polish.
 
 ## Application Preview
-
 ![Website Preview](app/static/images/UrbanNestScratch1.png)
 ![Website Preview](app/static/images/UrbanNestScratch2.png)
 ![Website Preview](app/static/images/UrbanNestScratch3.png)
